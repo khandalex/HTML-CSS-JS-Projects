@@ -1,0 +1,124 @@
+@font-face {
+    font-family: cooper;
+    src: url(./fonts/cooperltbtlight.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cooper;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+#nav>h1{
+    font-size: 31px;
+    font-weight: 100;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+#nav #part2 a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position:absolute;
+    top: 0%;
+    left: -100%;
+    transition:left 0.4s ease ;
+
+}
+#nav #part2 a:nth-last-child(1) h5{
+font-weight: 100;
+position: relative;
+z-index: 99;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green{
+    left:0;}
+#main>h1{
+    font-size: 5.4vw;
+    width:60%;
+    text-align:center;
+    font-weight:100;
+    text-transform:capitalize;
+    position:relative;
+    z-index: 99;
+}
+#main>h1::after{
+    content: "";
+    position:absolute;
+    background-image:url(images/underline-green.svg);
+    width: 35%;
+    height:16px;
+    bottom:-5px;
+    left: 50%;
+   
+    transform:translate(-50%,0)
+
+}
+#main #img1{
+    height: auto;
+    width: 290px;
+    position:absolute;
+    left: 7%;
+    top: 30%;
+}
+#main #img2{
+    height: auto;
+    width: 290px;
+    position:absolute;
+    left: 72%;
+    top: 20%;
+}
+#main #img3{
+    height: auto;
+    width: 500px;
+    position:absolute;
+    left: 40%;
+    top: 60%;
+}
+#main img{
+    transition: margin 0.8s ease;
+}
+#main img:hover{
+    margin-top: -10px;
+}
