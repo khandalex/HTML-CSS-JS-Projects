@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248 191 213);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+   /* background-color: red;*/
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    /* background-color: rgb(0, 68, 255); */
+    background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(52, 35, 41, 0.38);
+    
+}
+#part3{
+    height: 100%;
+    width: 07%;
+    /* background-color: rgb(98, 255, 0);*/
+}
+#text-div{
+    /* height: 300px; */
+    position:absolute;
+    /* background-color: red; */
+    left: 7%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+#text-div>h1{
+    font-size: 95px;
+    font-family: MonumentExtended-Regular;
+    font-weight: 500px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 75px;
+    color: white;
+
+}
+#small-img-div{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url(https://images.pexels.com/photos/1036621/pexels-photo-1036621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    right: -53%;
+    top: -5%;
+    /* width: 100%; */
+    /* background-color: red; */
+    
+}
+#vertical-text h1{
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    font-family: MonumentExtended-Regular;
+    color: transparent;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+}
+#nav{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 393px;
+    /* background-color: red; */
+    left: 6%;
+    top: 5%;
+}
+#nav img{
+    height: 60px;
+}
+#nav h5{
+    font-size: 20px;
+    font-family: "gilroy black";
+    color: #fff;
+}
